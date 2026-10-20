@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seje Menas</title>
+<meta name="description" content="Humor brasileiro sobre as pequenas hipocrisias do dia a dia. Siga o canal e baixe os stickers.">
+<link rel="icon" href="images/icon/logo_transparent.png">
+
+<meta property="og:title" content="Seje Menas">
+<meta property="og:description" content="Humor brasileiro sobre as pequenas hipocrisias do dia a dia.">
+<meta property="og:image" content="https://sejemenasbrasil.github.io/images/icon/logo.png">
+<meta property="og:url" content="https://sejemenasbrasil.github.io/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #16181d;
+    --muted: #5b6270;
+    --rule: #e3e6ea;
+    --card: #f7f8fa;
+    --sheet: #ffffff;           /* fundo claro fixo: a arte dos stickers e preta */
+    --logo-filter: none;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101216;
+      --fg: #e8eaed;
+      --muted: #a2a9b5;
+      --rule: #272b33;
+      --card: #171a20;
+      --sheet: #f2f3f5;
+      --logo-filter: invert(1); /* o logo e preto sobre fundo transparente */
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101216;
+    --fg: #e8eaed;
+    --muted: #a2a9b5;
+    --rule: #272b33;
+    --card: #171a20;
+    --sheet: #f2f3f5;
+    --logo-filter: invert(1);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 48px 16px 72px;
+  }
+  main { max-width: 480px; margin: 0 auto; }
+
+  /* --- topo --- */
+  .hero { text-align: center; }
+  .hero img {
+    width: min(260px, 72vw);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: var(--logo-filter);
+  }
+  .tagline {
+    color: var(--muted);
+    margin: 14px 0 34px;
+    font-size: 1.02rem;
+  }
+
+  /* --- links --- */
+  .links { display: grid; gap: 10px; }
+  .links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    background: var(--card);
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  .links a:hover { transform: translateY(-1px); border-color: var(--muted); }
+  .links svg { flex: none; width: 20px; height: 20px; fill: currentColor; }
+
+  /* --- secao --- */
+  section { margin-top: 46px; }
+  h2 { font-size: 1.1rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .hint { color: var(--muted); font-size: 0.92rem; margin: 0 0 18px; }
+
+  /* --- stickers --- */
+  .stickers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .stickers a {
+    display: block;
+    background: var(--sheet);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 10px;
+    text-decoration: none;
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  .stickers a:hover { transform: translateY(-2px); border-color: var(--muted); }
+  .stickers img {
+    width: 100%;
+    height: 92px;
+    object-fit: contain;
+    display: block;
+  }
+  .stickers span {
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #5b6270;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .download-all {
+    display: block;
+    margin-top: 10px;
+    padding: 13px 18px;
+    text-align: center;
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    background: var(--card);
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .download-all:hover { border-color: var(--muted); }
+
+  footer {
+    margin-top: 46px; padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 0.85rem;
+    text-align: center;
+  }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 380px) {
+    .stickers { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="images/icon/logo_transparent.png"
+         alt="Seje Menas — bonequinho de óculos escuros com os braços cruzados">
+    <p class="tagline">
+      Humor brasileiro sobre as pequenas hipocrisias do dia a dia.
+    </p>
+  </div>
+
+  <nav class="links">
+    <a href="https://www.instagram.com/seje.menas.brasil/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.17.4.36 1 .42 2.2.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.22.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.17-1 .36-2.2.42-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42-.6-.22-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.22-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2m0 2.1c-3.1 0-3.5 0-4.8.07-1.1.05-1.7.24-2.1.4-.5.2-.9.44-1.3.84-.4.4-.64.8-.84 1.3-.16.4-.35 1-.4 2.1-.06 1.3-.07 1.7-.07 4.8s0 3.5.07 4.8c.05 1.1.24 1.7.4 2.1.2.5.44.9.84 1.3.4.4.8.64 1.3.84.4.16 1 .35 2.1.4 1.3.06 1.7.07 4.8.07s3.5 0 4.8-.07c1.1-.05 1.7-.24 2.1-.4.5-.2.9-.44 1.3-.84.4-.4.64-.8.84-1.3.16-.4.35-1 .4-2.1.06-1.3.07-1.7.07-4.8s0-3.5-.07-4.8c-.05-1.1-.24-1.7-.4-2.1-.2-.5-.44-.9-.84-1.3-.4-.4-.8-.64-1.3-.84-.4-.16-1-.35-2.1-.4-1.3-.06-1.7-.07-4.8-.07m0 3.4a4.3 4.3 0 110 8.6 4.3 4.3 0 010-8.6m0 2.1a2.2 2.2 0 100 4.4 2.2 2.2 0 000-4.4m5.5-2.3a1 1 0 11-2 0 1 1 0 012 0"/></svg>
+      Instagram
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61595180444955" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 10-11.6 9.9v-7h-2.5V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.3v7A10 10 0 0022 12"/></svg>
+      Facebook
+    </a>
+  </nav>
+
+  <section>
+    <h2>Stickers</h2>
+    <p class="hint">
+      Clique para baixar. Dá para usar no WhatsApp, no Telegram ou onde quiser.
+    </p>
+
+    <div class="stickers">
+      <a href="images/stickers/sticker0001.png" download>
+        <img src="images/stickers/sticker0001.png" alt="Sticker do bonequinho">
+        <span>Bonequinho</span>
+      </a>
+      <a href="images/stickers/sticker0002.png" download>
+        <img src="images/stickers/sticker0002.png" alt="Sticker com a marca Seje Menas">
+        <span>Marca</span>
+      </a>
+      <a href="images/stickers/sticker0003.png" download>
+        <img src="images/stickers/sticker0003.png" alt="Sticker do bonequinho com a marca Seje Menas">
+        <span>Completo</span>
+      </a>
+    </div>
+
+    <a class="download-all" href="images/stickers/seje-menas-stickers.zip" download>
+      Baixar todos (.zip)
+    </a>
+  </section>
+
+  <footer>
+    <a href="privacidade/">Política de privacidade</a>
+    <br><br>
+    © <span id="ano">2026</span> Seje Menas
+  </footer>
+</main>
+<script>
+  document.getElementById("ano").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
